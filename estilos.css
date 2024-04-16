@@ -1,0 +1,218 @@
+*{
+    
+    background-color: #012030;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+
+
+img{
+    height: 80px;
+    width: 100px;
+    image-rendering: optimizeQuality;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+.anchors{
+    margin-top: 20px;
+}
+
+.anchors a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline #60cc6c 2px;
+}
+
+
+
+h2, a, ul, ol, p, label, button, h4{
+    color: white;
+}
+
+
+#inicio{
+    margin-left: 10px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.inicio{
+    margin-left: 30px;
+    width: 70%;
+}
+
+.inicio p{
+    width: 50%;
+}
+
+
+.titulo-mision{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+#mision ul{
+    text-align: center;
+    list-style-position: inside;
+    
+}
+
+
+
+.titulo-servicios h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.titulo-servicios p{
+    display: flex;
+    justify-content: center;
+}
+
+
+.iconos-servicios{
+    margin-top: 40px;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.icono-base img{
+    margin-left: 35%;
+    image-rendering: optimizeQuality;
+    width: 90px;
+}
+
+.icono-base p{
+    margin-left: 30px;
+}
+
+.icono-testing {
+    margin-left: 5%;
+}
+
+.icono-testing img{
+    image-rendering: optimizeQuality;
+    width: 90px;
+}
+
+
+.icono-analisis {
+    margin-left: 5%
+}
+
+.icono-analisis img{
+    margin-left: 20%;
+    image-rendering: optimizeQuality;
+    width: 90px;
+    height: 80px;
+}
+
+.icono-tecnologia{
+    margin-left: 5%;
+}
+
+.icono-tecnologia img{
+    margin-left: 30%;
+    image-rendering: optimizeQuality;
+    width: 90px;
+}
+
+#propuesta-contacto{
+    display: flex;
+    margin-top: 40px;
+}
+
+.propuesta{
+    margin-left: 30px;
+}
+
+.propuesta ul{
+    width: 60%;
+}
+
+.icono-personas{
+    width: 50%;
+}
+
+input{
+    margin-top: 20px;
+    margin-left: 15px;
+    border-color: #60cc6c;
+    border-style: solid;
+}
+
+
+
+button{
+    border-color: #60cc6c;
+    border-style: solid;
+    text-align: center;
+}
+
+.boton-enviar{
+    display: flex;
+    justify-content: center;
+}
+
+
+h4{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:550px){
+    nav{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .anchors{
+        display: grid;
+    }
+
+
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    li{
+        padding: 10px;
+    }
+
+    #servicios{
+        width: 100%;
+       
+    }
+
+    .iconos-servicios{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
