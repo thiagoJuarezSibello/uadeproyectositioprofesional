@@ -5,73 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultoría de Análisis de Datos y Testing Automatizado</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Data&QA: Consultoría de Análisis de Datos y Testing Automatizado</h1>
-        <img src="img/logotipo.png" alt="logotipo">
-    </header>
+    
+        
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#mision">Misión, Visión y Valores</a>
-        <a href="#servicios">Servicios Ofrecidos</a>
-        <a href="#propuesta">Propuesta Comercial</a>
-        <a href="#contacto">Información de Contacto</a>
+        <div class="logo">
+            <img src="img/logotipo.png" alt="logotipo">
+        </div>
+        <div class="anchors">
+            <a href="#inicio">Inicio</a>
+            <a href="#mision">Misión, Visión y Valores</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#propuesta">Propuesta Comercial</a>
+            <a href="#contacto">Contacto</a>
+        </div>
     </nav>
+    
+
+    
     <main>
-        <div class="section" id="inicio">
-            <h2>Bienvenidos!</h2>
-            <p>Ofrecemos servicios de análisis de datos y automation testing para ayudar a su empresa a alcanzar sus metas.</p>
-        </div>
-        <div class="section" id="mision">
-            <h2>Misión, Visión y Valores</h2>
-            <ol>
-                <li>
-                    Nuestra misión es brindar soluciones tecnológicas de alto nivel que mejoren la eficiencia y la precisión en los procesos de su empresa.
-                </li>
-                <li>
-                    Nuestra visión es ser líderes en el mercado global de la consultoría en ramas tecnológicas como Data y Quality Assurance.
-                </li>
-                <li>
-                    Nuestros valores son la integridad, la colaboración y la innovación.
-                </li>
-            </ol>
-        </div>
-        <div class="section" id="servicios">
-            <h2>Servicios Ofrecidos</h2>
-            <p>Ofrecemos los siguientes servicios:</p>
-            <ul>
-                <li>Análisis de datos, transformación, diseño de bases relacionales y gráficos. </li>
-                <li>Testing manual y automatizado.</li>
-                <li>Desarrollo de estrategias de análisis para su empresa.</li>
-                <li>Implementación de las herramientas más adecuadas para sus propositos.</li>
-            </ul>
-        </div>
-        <div class="section" id="propuesta">
-            <h2>Propuesta Comercial</h2>
-            <p>Nuestra propuesta comercial incluye:</p>
-            <ul>
-                <li>Todo el proceso de análisis de su información e implementación de soluciones requeridas y personalizadas para su empresa</li>
-                <li>Seguimiento de código, limpieza, ejecución de test cases y reportes.</li>
-                <li>Equipo de expertos en Data y Calidad de software.</li>
-            </ul>
-        <div class="section" id="contacto">
-            <h2>Información de Contacto</h2>
-            <p>Dejanos tus datos y te contactaremos a la brevedad!</p>
-            <form action="/submit-form" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-              
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-              
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-              
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-                <br>
-                <br>
-                <button type="submit">Enviar formulario</button>
-              </form>
-        </div>
+        <section id="inicio">
+                <div class="inicio">
+                    <h2>Bienvenidos!</h2>
+                    <p>Ofrecemos servicios de análisis de datos y automation
+                testing para ayudar a su empresa a alcanzar sus metas.</p>
+                </div>
+                <img src="/img/bienvenidos.png" alt="icono-inicio" class="icono-inicio">
+        </section>
+
+        <section id="mision">
+                <div class="titulo-mision">
+                    <h2>Misión, Visión y Valores</h2>
+                </div>
+                        <ul>
+                            <li>
+                                Nuestra misión es brindar soluciones tecnológicas de alto nivel que mejoren la eficiencia y la precisión en los procesos de su empresa.
+                            </li>
+                            <li>
+                                Nuestra visión es ser líderes en el mercado global de la consultoría en ramas tecnológicas como Data y Quality Assurance.
+                            </li>
+                            <li>
+                                Nuestros valores son la integridad, la colaboración y la innovación.
+                            </li>
+                        </ul>
+        </section>
+        
+        <section id="servicios">
+            <div class="titulo-servicios">
+                <h2>Servicios</h2>
+                <p>Ofrecemos los siguientes servicios:</p>
+            </div>
+            <div class="iconos-servicios">
+                <div class="icono-base">
+                    <img src="img/base-de-datos.png" alt="basededatos">
+                    <p>Análisis de datos, transformación, diseño de bases relacionales y gráficos.</p>
+                </div>
+                <div class="icono-testing">
+                    <img src="img/testing.png" alt="testing">
+                    <p>Testing manual y automatizado.</p>
+                </div>
+                <div class="icono-analisis">
+                    <img src="img/análisis-sitio-web.png" alt="analisisweb">
+                    <p>Desarrollo de estrategias de análisis para su empresa.</p>
+                </div>
+                <div class="icono-tecnologia">
+                    <img src="img/tecnología.png" alt="tecnologia">
+                    <p>Implementación de las herramientas más adecuadas para sus propositos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="propuesta-contacto">
+            <div class="propuesta" id="propuesta">
+                <h2>Propuesta Comercial</h2>
+                <p>Nuestra propuesta comercial incluye:</p>
+                <ul>
+                    <li>Todo el proceso de análisis de su información e implementación de soluciones requeridas y personalizadas para su empresa</li>
+                    <li>Seguimiento de código, limpieza, ejecución de test cases y reportes.</li>
+                    <li>Equipo de expertos en Data y Calidad de software.</li>
+                </ul>
+            </div>
+            <div class="contacto" id="contacto">
+                <div class="titulo-contacto">
+                    <h2>Contacto</h2>
+                    <p>Dejanos tus datos y te contactaremos a la brevedad.</p>
+                </div>
+                <div class="form">
+                    <form action="/submit-form" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <br>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        
+                </div>
+                    <br>
+                    <div class="boton-enviar">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section> 
+
+        <footer>
+            <h4>Copyright ©2024 Data&QA</h4>
+        </footer>
