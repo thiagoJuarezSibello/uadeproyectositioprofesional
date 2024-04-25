@@ -9,7 +9,42 @@
     "wdth" 100;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  nav .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav .anchors {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  nav .anchors a {
+    text-decoration: none;
+  }
 
+  @media (max-width: 550px){
+    nav{
+    width: 100%;
+    flex-wrap: wrap;
+
+
+
+    .anchors{
+    display: grid;
+}
+}
+}
+  
 
 img{
     height: 80px;
@@ -17,24 +52,7 @@ img{
     image-rendering: optimizeQuality;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-}
 
-.logo{
-    margin-left: 30px;
-}
-
-.anchors{
-    margin-top: 20px;
-}
-
-.anchors a{
-    padding: 10px;
-    text-decoration: none;
-}
 
 a:hover{
     text-decoration: underline #60cc6c 2px;
@@ -78,65 +96,61 @@ h2, a, ul, ol, p, label, button, h4{
 
 
 
-.titulo-servicios h2{
+#servicios {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #servicios .titulo-servicios {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  #servicios .iconos-servicios {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-}
+  }
+  
+  #servicios .icono-base,
+  #servicios .icono-testing,
+  #servicios .icono-analisis,
+  #servicios .icono-tecnologia {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  #servicios .icono-base img,
+  #servicios .icono-testing img,
+  #servicios .icono-analisis img,
+  #servicios .icono-tecnologia img {
+    width: 30%;
+    height: auto;
+  }
+  
+  #servicios .icono-base p,
+  #servicios .icono-testing p,
+  #servicios .icono-analisis p,
+  #servicios .icono-tecnologia p {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 550px) {
+    #servicios .iconos-servicios {
+      display: flex;
+    }
+  
+    #servicios .icono-base,
+    #servicios .icono-testing,
+    #servicios .icono-analisis,
+    #servicios .icono-tecnologia {
+      width: 100%;
+    }
+  }
 
-.titulo-servicios p{
-    display: flex;
-    justify-content: center;
-}
 
-
-.iconos-servicios{
-    margin-top: 40px;
-    display: flex;
-    justify-content: right;
-    
-}
-
-.icono-base img{
-    margin-left: 35%;
-    image-rendering: optimizeQuality;
-    width: 90px;
-}
-
-.icono-base p{
-    margin-left: 30px;
-}
-
-.icono-testing {
-    margin-left: 5%;
-}
-
-.icono-testing img{
-    image-rendering: optimizeQuality;
-    width: 90px;
-}
-
-
-.icono-analisis {
-    margin-left: 5%
-}
-
-.icono-analisis img{
-    margin-left: 20%;
-    image-rendering: optimizeQuality;
-    width: 90px;
-    height: 80px;
-}
-
-.icono-tecnologia{
-    margin-left: 5%;
-}
-
-.icono-tecnologia img{
-    margin-left: 30%;
-    image-rendering: optimizeQuality;
-    width: 90px;
-}
 
 #propuesta-contacto{
     display: flex;
@@ -183,35 +197,9 @@ h4{
 }
 
 @media (max-width:550px){
-    nav{
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .anchors{
-        display: grid;
-    }
-
-
-    .logo{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
+    
     li{
         padding: 10px;
-    }
-
-    #servicios{
-        width: 100%;
-       
-    }
-
-    .iconos-servicios{
-        width: 100%;
-        display: flex;
-        justify-content: center;
     }
 
     
